@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.quiz-container {
+    width: 700px;
+    background-color: rgb(51, 48, 48);
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h2 {
+    color: aquamarine;
+    border-bottom: 1px solid #fff;
+    margin: 0;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    font-size: 40px;
+
+}
+
+.question {
+    font-size: 24px;
+    color: whitesmoke;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.answers {
+    margin-bottom: 15px;
+}
+
+.option {
+    background-color: #ccc;
+    color: #222;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.option:hover {
+    background-color: rgb(167, 163, 163);
+}
+
+.option.correct {
+    background-color: rgb(19, 167, 19);
+}
+
+.option.wrong {
+    background-color: rgb(230, 11, 11);
+}
+
+.option.disabled {
+    pointer-events: none;
+}
+
+.btn-next {
+    background-color: aquamarine;
+    color: #222;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    font-weight: 700;
+}
+
+.quiz-over-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(34, 34, 34, 0.9);
+    display: none;
+}
+
+.quiz-over-modal.flex {
+    display: flex;
+}
+
+.quiz-over-modal h1 {
+    color: aquamarine;
+    margin: 0;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    font-size: 55px;
+}
+
+.quiz-over-modal p, .quiz-over-modal span {
+    font-size: 30px;
+    color: whitesmoke;
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.try-again {
+    background-color: aquamarine;
+    color: #222;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+}
+
+.answer-circles div {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 10px;
+    display: inline-block;
+}
+
+.answer-circles div.correct {
+    background-color: rgb(19, 167, 19);
+}
+
+.answer-circles div.wrong {
+    background-color: rgb(230, 11, 11);
+}
